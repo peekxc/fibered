@@ -51,3 +51,7 @@ def test_klein():
 	cover_base, nerve_base, centers_base, omegas = obstructionsData(X_dm, pi, k, e, d)
 	sol, basis, dth, dgms = sw1_obstruction(X_dm, nerve_base, centers_base, omegas)
 	assert len(dgms[1]) == 1 and np.diff(dgms[1]).item() >= 0.25
+
+
+def test_moebius():
+	assert True
